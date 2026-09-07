@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutomaTIC Solutions | Ingeniería y Automatización</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Recursos/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="Recursos/logo.png" alt="Logo Empresa" class="logo-img">
+                    <h1>AutomaTIC Solutions</h1>
+                </a>
+            </div>
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="index.html" class="activo">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="contenedor hero-text">
+                <h2>Innovación y Control para el Entretenimiento</h2>
+                <p>Optimizamos, reparamos y automatizamos maquinaria industrial con un enfoque en seguridad operacional y eficiencia energética.</p>
+                <a href="servicios.html" class="btn btn-primario">Descubre Nuestros Servicios</a>
+            </div>
+        </section>
+
+        <section class="resumen-nosotros contenedor seccion animar-scroll oculto-derecha">
+            <div class="texto-nosotros">
+                <h3>Expertos en Sistemas Electromecánicos</h3>
+                <p>Somos una firma de consultoría líder en el sector del entretenimiento. Nuestro equipo de técnicos operacionales e ingenieros garantiza que la maquinaria pesada y las atracciones funcionen bajo los más estrictos estándares de seguridad y sostenibilidad.</p>
+                <a href="nosotros.html" class="btn btn-secundario">Conoce Nuestra Misión y Visión</a>
+            </div>
+            <div class="imagen-nosotros">
+                <img src="Recursos/Rec_Index/IngenierosRevisandoMaquinaria.png" alt="Ingenieros revisando maquinaria automatizada">
+            </div>
+        </section>
+
+        <section class="servicios-destacados bg-claro seccion animar-scroll oculto-izquierda">
+            <div class="contenedor">
+                <h3 class="centrar-texto">Nuestras Especialidades</h3>
+                <div class="grid-servicios">
+                    <div class="card-servicio">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLMXHkZs996MPtHDygpwXH1gAAasTSFIaVcYACvaiemw&s=10" alt="Mantenimiento de Maquinaria">
+                        <h4>Mantenimiento de Maquinaria</h4>
+                        <p>Reparación y ajuste técnico de sistemas electromecánicos complejos.</p>
+                    </div>
+                    <div class="card-servicio">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmsitQwGwVoLnZ7nEIrTzWzLl6DONAWDaeUxxaCjg5w&s=10" alt="Seguridad Operacional">
+                        <h4>Seguridad Operacional</h4>
+                        <p>Implementación de sensores y barreras autónomas para la protección de usuarios.</p>
+                    </div>
+                    <div class="card-servicio">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHm2zmhUxFhEE7Zbkz5c-sjUbFh6Kl44uPALUStiBKlg&s=10" alt="Eficiencia Energética">
+                        <h4>Eficiencia Energética</h4>
+                        <p>Soluciones basadas en ODS para reducir el consumo eléctrico en parques de atracciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyecto-destacado contenedor seccion animar-scroll oculto-abajo">
+            <div class="card-proyecto">
+                <div class="contenido-proyecto">
+                    <span class="etiqueta">Caso de Éxito Reciente</span>
+                    <h3>Consultoría Técnica: IRTRA Petapa</h3>
+                    <p>Desarrollo de un prototipo electrónico autónomo para resolver desafíos operacionales en el parque de atracciones, alineado estrictamente con los Objetivos de Desarrollo Sostenible (ODS).</p>
+                    <a href="proyectos.html" class="btn btn-primario">Ver Documentación del Proyecto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor footer-grid">
+            <div class="footer-marca">
+                <h3>AutomaTIC Solutions</h3>
+                <p>Soluciones inteligentes para la industria del entretenimiento y la maquinaria operativa.</p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto Rápido</h4>
+                <p><strong>Teléfono:</strong> +502 2435 6789</p>
+                <p><strong>Correo:</strong> contacto@automaticsolutions.com</p>
+                <p><strong>Sede Central:</strong> Ciudad de Guatemala, Guatemala</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutomaTIC Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hero = document.querySelector('.hero-text');
+        window.addEventListener('scroll', () => {
+            let scroll = window.scrollY;
+            if (scroll < 600) {
+                hero.style.opacity = 1 - (scroll / 400);
+                hero.style.transform = `translateY(${scroll / 3}px)`; 
+            }
+        });
+
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); } 
+                else { entry.target.classList.remove('visible'); }
+            });
+        }, observerOptions);
+
+        const elementosOcultos = document.querySelectorAll('.animar-scroll');
+        elementosOcultos.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Éxito: IRTRA Petapa | AutomaTIC Solutions</title>
+    <link rel="icon" href="Recursos/logo.png" type="image/png">
+    <link rel="stylesheet" href="petapastyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="Recursos/logo.png" alt="AutomaTIC Solutions Logo" class="logo-img">
+                    <h1>AutomaTIC Solutions</h1>
+                </a>
+            </div>
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-petapa">
+            <div class="contenedor hero-text animar-scroll oculto-abajo">
+                <span class="badge-proyecto">Consultoría & Auditoría Técnica</span>
+                <h2>Control de Aforo Automatizado en Juegos Mecánicos</h2>
+                <p>Implementación de lógica de control en tiempo real para la optimización operativa en IRTRA Petapa.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 1: DESCRIPCIÓN DEL PROYECTO -->
+        <section class="contenedor seccion">
+            <h3 class="centrar-texto animar-scroll oculto-abajo">Planteamiento del Proyecto</h3>
+            
+            <div class="grid-problemática">
+                <div class="card-bloque animar-scroll oculto-izquierda">
+                    <div class="icono-bloque">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    </div>
+                    <h4>Problemática Operacional</h4>
+                    <p>En atracciones mecánicas de alto flujo de visitantes, la verificación del aforo depende tradicionalmente del conteo visual o manual por parte del operador. Esta modalidad presenta un margen crítico de error humano, exponiendo el juego mecánico a situaciones de sobrecupo, desgaste prematuro de la estructura y potenciales riesgos a la integridad física de los usuarios.</p>
+                </div>
+
+                <div class="card-bloque animar-scroll oculto-derecha">
+                    <div class="icono-bloque">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h4>Solución de Ingeniería Desarrollada</h4>
+                    <p>Diseñamos un sistema embebido de respuesta inmediata basado en un microcontrolador programado en C++. Dos pulsadores con filtrado de rebote (debounce) registran entradas y salidas. Un contador en tiempo real valida la ocupación contra el límite: un <strong>LED verde</strong> autoriza el paso, mientras que un <strong>LED rojo intermitente y un buzzer de alta frecuencia</strong> alertan de forma ineludible al operador cuando se alcanza la capacidad máxima.</p>
+                </div>
+            </div>
+
+            <div class="ods-caja animar-scroll oculto-abajo">
+                <h4>Alineación con Objetivos de Desarrollo Sostenible (ODS)</h4>
+                <div class="ods-items">
+                    <div class="ods-item">
+                        <strong>ODS 3: Salud y Bienestar</strong>
+                        <p>Prevención activa de riesgos laborales y protección incondicional de los usuarios del parque.</p>
+                    </div>
+                    <div class="ods-item">
+                        <strong>ODS 9: Industria, Innovación e Infraestructura</strong>
+                        <p>Modernización tecnológica mediante sistemas autónomos sostenibles y de alta fiabilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: INFOGRAFÍA INTERACTIVA -->
+        <section class="bg-claro seccion">
+            <div class="contenedor">
+                <h3 class="centrar-texto animar-scroll oculto-abajo">Infografía del Sistema</h3>
+                <p class="centrar-texto animar-scroll oculto-abajo subtexto">Esquema funcional, diagrama de bloques y arquitectura del microcontrolador.</p>
+                
+                <div class="infografia-contenedor animar-scroll oculto-abajo">
+                    <img src="Recursos/Rec_Proyectos/RideGuard_Infografia_AutomaTIC.png" alt="Infografía de Control de Aforo AutomaTIC" style="width: 100%; height: auto; border-radius: 8px; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: DOCUMENTO FORMAL (DESPLEGADO COMO PDF) -->
+        <section class="contenedor seccion">
+            <h3 class="centrar-texto animar-scroll oculto-abajo">Documentación Técnica Formal</h3>
+            <p class="centrar-texto animar-scroll oculto-abajo subtexto">Consulte la documentación académica completa, código fuente e indicadores de cumplimiento normativo.</p>
+            
+            <div class="animar-scroll oculto-abajo" style="border: none; background: transparent;">
+                <iframe src="Recursos/Rec_Proyectos/documentoFormal.pdf" width="100%" height="750px" style="border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    Tu navegador no soporta la visualización de PDFs. 
+                </iframe>
+                
+                <div class="centrar-texto" style="margin-top: 25px;">
+                    <a href="Recursos/Rec_Proyectos/documentoFormal.pdf" target="_blank" class="btn btn-primario">Abrir PDF en Nueva Pestaña</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: DEMOSTRACIÓN EN VIDEO -->
+        <section class="bg-claro seccion">
+            <div class="contenedor">
+                <h3 class="centrar-texto animar-scroll oculto-abajo">Demostración del Prototipo</h3>
+                <p class="centrar-texto animar-scroll oculto-abajo subtexto">Visualización del circuito lógico en funcionamiento aplicado a la solución de control de aforo.</p>
+                
+                <div class="video-contenedor animar-scroll oculto-abajo">
+                    <video controls>
+                        <source src="Recursos/Rec_Proyectos/videoFuncional.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: PODCAST INFORMATIVO -->
+        <section class="contenedor seccion">
+            <div class="contenedor">
+                <h3 class="centrar-texto animar-scroll oculto-abajo">Podcast Informativo</h3>
+                <p class="centrar-texto animar-scroll oculto-abajo subtexto">Escuche a nuestro equipo técnico analizar los retos y resultados de este proyecto.</p>
+                
+                <div class="podcast-card animar-scroll oculto-abajo">
+                    <div class="podcast-header">
+                        <div class="podcast-cover">🎙️</div>
+                        <div class="podcast-meta">
+                            <span class="podcast-badge">Episodio Especial</span>
+                            <h4>AutomaTIC Talks: Control de Aforo e Innovación en Parques de Atracciones</h4>
+                            <p>Duración: 3:37 min • Presentado por el Equipo de Ingeniería de AutomaTIC Solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="podcast-player">
+                        <audio controls class="reproductor-audio">
+                            <source src="Recursos/Rec_Proyectos/PODCASTproyectofinaltics.m4a" type="audio/mp4">
+                            Tu navegador no soporta el reproductor de audio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor footer-grid">
+            <div class="footer-marca">
+                <h3>AutomaTIC Solutions</h3>
+                <p>Soluciones inteligentes para la industria del entretenimiento y la maquinaria operativa.</p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto Rápido</h4>
+                <p><strong>Teléfono:</strong> +502 2435 6789</p>
+                <p><strong>Correo:</strong> contacto@automaticsolutions.com</p>
+                <p><strong>Sede Central:</strong> Ciudad de Guatemala, Guatemala</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutomaTIC Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); } 
+                else { entry.target.classList.remove('visible'); }
+            });
+        }, observerOptions);
+        const elementosOcultos = document.querySelectorAll('.animar-scroll');
+        elementosOcultos.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

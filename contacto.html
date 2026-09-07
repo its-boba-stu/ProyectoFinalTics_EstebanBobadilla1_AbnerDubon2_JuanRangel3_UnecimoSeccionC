@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | AutomaTIC Solutions</title>
+    <link rel="icon" href="Recursos/logo.png" type="image/png">
+    <link rel="stylesheet" href="contactoStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="Recursos/logo.png" alt="AutomaTIC Solutions Logo" class="logo-img">
+                    <h1>AutomaTIC Solutions</h1>
+                </a>
+            </div>
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- CABECERA DE SECCIÓN -->
+        <section class="hero-contacto">
+            <div class="contenedor hero-text animar-scroll oculto-abajo">
+                <h2>Ponte en Contacto</h2>
+                <p>¿Tienes un proyecto en mente? Nuestro equipo de ingeniería está listo para asesorarte.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE FORMULARIO E INFORMACIÓN -->
+        <section class="contenedor seccion">
+            <div class="grid-contacto">
+                <!-- Información de Contacto -->
+                <div class="info-contacto animar-scroll oculto-izquierda">
+                    <h3>Información Corporativa</h3>
+                    <p>Comunícate con nosotros para consultas técnicas, auditorías de sistemas o cotizaciones para tu empresa.</p>
+                    
+                    <div class="item-info">
+                        <div class="icono-info">📍</div>
+                        <div>
+                            <h4>Sede Central</h4>
+                            <p>Ciudad de Guatemala, Guatemala</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <div class="icono-info">📞</div>
+                        <div>
+                            <h4>Teléfono Directo</h4>
+                            <p>+502 2435 6789</p>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <div class="icono-info">✉️</div>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p>contacto@automaticsolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="formulario-card animar-scroll oculto-derecha">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="#" method="POST" class="form-contacto">
+                        <div class="grupo-input">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="grupo-input">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" id="correo" name="correo" required placeholder="tu@empresa.com">
+                        </div>
+                        <div class="grupo-input">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required placeholder="Motivo de la consulta">
+                        </div>
+                        <div class="grupo-input">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe los detalles de tu proyecto o consulta..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primario btn-block">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE REPOSITORIO GITHUB -->
+        <section class="bg-claro seccion">
+            <div class="contenedor">
+                <h3 class="centrar-texto animar-scroll oculto-abajo">Código Fuente y Repositorio</h3>
+                <p class="centrar-texto animar-scroll oculto-abajo subtexto">Accede a la documentación técnica, control de versiones y archivos base del sistema.</p>
+                
+                <div class="documento-card animar-scroll oculto-abajo" style="max-width: 850px; margin: 0 auto;">
+                    <div class="doc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </div>
+                    <div class="doc-info">
+                        <h4>Repositorio Oficial del Proyecto</h4>
+                        <p>Explora la programación del microcontrolador en C++, el desarrollo frontend y el historial de versiones del proyecto realizado por nuestro equipo.</p>
+                    </div>
+                    <div class="doc-action">
+                        <a href="https://github.com/its-boba-stu/ProyectoFinalTICS_EstebanBobadilla1_AbnerDub-n2_JuanRangel3_Und-cimoSecci-nC_" target="_blank" class="btn btn-secundario">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor footer-grid">
+            <div class="footer-marca">
+                <h3>AutomaTIC Solutions</h3>
+                <p>Soluciones inteligentes para la industria del entretenimiento y la maquinaria operativa.</p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto Rápido</h4>
+                <p><strong>Teléfono:</strong> +502 2435 6789</p>
+                <p><strong>Correo:</strong> contacto@automaticsolutions.com</p>
+                <p><strong>Sede Central:</strong> Ciudad de Guatemala, Guatemala</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AutomaTIC Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); } 
+                else { entry.target.classList.remove('visible'); }
+            });
+        }, observerOptions);
+        const elementosOcultos = document.querySelectorAll('.animar-scroll');
+        elementosOcultos.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

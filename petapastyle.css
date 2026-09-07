@@ -1,0 +1,123 @@
+:root {
+    --color-primario: #0b192c; 
+    --color-secundario: #00b4d8; 
+    --color-fondo: #f8f9fa; 
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --fuente-principal: 'Roboto', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--fuente-principal); color: var(--color-texto); line-height: 1.6; background-color: var(--color-blanco); overflow-x: hidden; }
+
+.contenedor { width: 90%; max-width: 1200px; margin: 0 auto; }
+.seccion { padding: 60px 0; }
+.centrar-texto { text-align: center; margin-bottom: 20px; }
+.subtexto { color: #666666; font-size: 1.05rem; margin-bottom: 40px; }
+.bg-claro { background-color: var(--color-fondo); }
+
+h1, h2, h3, h4 { color: var(--color-primario); margin-bottom: 15px; }
+p { margin-bottom: 20px; }
+
+.btn {
+    display: inline-block; padding: 12px 28px; text-decoration: none; border-radius: 5px;
+    font-weight: bold; transition: background-color 0.3s ease, transform 0.2s ease; cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primario { background-color: var(--color-secundario); color: var(--color-blanco); }
+.btn-primario:hover { background-color: #0096c7; }
+.btn-secundario { background-color: var(--color-primario); color: var(--color-blanco); }
+.btn-secundario:hover { background-color: #1a2a40; }
+
+header { background-color: var(--color-primario); color: var(--color-blanco); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo-link { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+.logo-img { height: 40px; width: auto; object-fit: contain; }
+.logo h1 { color: var(--color-blanco); font-size: 1.5rem; margin: 0; }
+.menu-navegacion ul { list-style: none; display: flex; gap: 20px; }
+.menu-navegacion a { color: var(--color-blanco); text-decoration: none; font-size: 1rem; display: inline-block; transition: color 0.3s ease, transform 0.3s ease; }
+.menu-navegacion a:hover, .menu-navegacion a.activo { color: var(--color-secundario); font-weight: bold; transform: scale(1.15); }
+
+.animar-scroll { transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94); opacity: 0; }
+.oculto-derecha { transform: translateX(100px); }
+.oculto-izquierda { transform: translateX(-100px); }
+.oculto-abajo { transform: translateY(100px); }
+.visible { opacity: 1; transform: translate(0, 0); }
+
+/* HERO PETAPA */
+.hero-petapa {
+    background: linear-gradient(rgba(11, 25, 44, 0.88), rgba(11, 25, 44, 0.88)), url('Recursos/Rec_Index/hero-bg.jpg') center/cover;
+    height: 45vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-blanco);
+}
+.hero-petapa h2 { color: var(--color-blanco); font-size: 2.3rem; margin-top: 10px; }
+.badge-proyecto { background-color: var(--color-secundario); color: var(--color-blanco); padding: 4px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; }
+
+/* PLANTEAMIENTO GRID (Minimalista) */
+.grid-problemática { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+.card-bloque {
+    padding: 40px 35px; border-radius: 8px; background-color: var(--color-blanco);
+    border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); text-align: center;
+}
+.icono-bloque svg { width: 45px; height: 45px; color: var(--color-primario); margin-bottom: 15px; }
+
+.ods-caja {
+    background-color: var(--color-blanco); padding: 40px; border-radius: 8px;
+    border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.ods-items { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
+
+/* INFOGRAFÍA */
+.infografia-contenedor { position: relative; border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+
+/* DOCUMENTO FORMAL */
+.documento-card {
+    display: flex; align-items: center; gap: 30px; background-color: var(--color-blanco);
+    padding: 35px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.doc-icon svg { width: 50px; height: 50px; color: var(--color-primario); }
+.doc-info { flex: 1; }
+.doc-info h4 { margin-bottom: 8px; }
+
+/* VIDEO PROTOTIPO */
+.video-contenedor {
+    max-width: 550px; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    border: 1px solid #e2e8f0;
+    background-color: #000000;
+}
+.video-contenedor video { width: 100%; display: block; }
+
+/* PODCAST */
+.podcast-card {
+    background: linear-gradient(135deg, #0b192c 0%, #1a2a40 100%);
+    color: var(--color-blanco); padding: 40px; border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.podcast-header { display: flex; align-items: center; gap: 25px; margin-bottom: 30px; }
+.podcast-cover { font-size: 3rem; background-color: rgba(255,255,255,0.1); padding: 20px; border-radius: 50%; }
+.podcast-badge { background-color: var(--color-secundario); color: var(--color-blanco); padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; }
+.podcast-meta h4 { color: var(--color-blanco); margin: 8px 0; }
+.podcast-meta p { color: #aaaaaa; margin: 0; font-size: 0.9rem; }
+.reproductor-audio { width: 100%; filter: invert(0.9); }
+
+footer { background-color: var(--color-primario); color: var(--color-blanco); padding: 50px 0 20px 0; margin-top: 40px; }
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 30px; }
+.footer-marca h3, .footer-enlaces h4, .footer-contacto h4 { color: var(--color-blanco); margin-bottom: 15px; }
+.footer-enlaces ul { list-style: none; }
+.footer-enlaces a { color: #cccccc; text-decoration: none; transition: color 0.3s ease; }
+.footer-enlaces a:hover { color: var(--color-secundario); }
+.footer-contacto p { color: #cccccc; margin-bottom: 8px; }
+.footer-contacto strong { color: var(--color-blanco); }
+.footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; font-size: 0.9rem; color: #aaaaaa; }
+
+@media (max-width: 768px) {
+    .header-content { flex-direction: column; text-align: center; }
+    .logo-link { flex-direction: column; gap: 5px; }
+    .menu-navegacion ul { margin-top: 15px; flex-wrap: wrap; justify-content: center; }
+    .grid-problemática, .ods-items { grid-template-columns: 1fr; }
+    .documento-card, .podcast-header { flex-direction: column; text-align: center; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+}
